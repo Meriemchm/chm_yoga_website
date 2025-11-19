@@ -23,21 +23,6 @@ export const NavbarItems = [
   },
 ];
 
-export const AboutItems = [
-  {
-    id: 1,
-    description: "Premium Dental Services You can Trust",
-  },
-  {
-    id: 2,
-    description: "Award-Winning Expert in Dental Care",
-  },
-  {
-    id: 3,
-    description: "Dedicated Experts Behind Every Smile",
-  },
-];
-
 export const ClassesData = [
   {
     id: 3,
@@ -65,6 +50,42 @@ export const ClassesData = [
     style: { backgroundColor: "var(--color-fourthary)" },
   },
 ];
+
+
+export const PlansData =  [
+  {
+    title: "One Class",
+    price: "19.00",
+    features: [
+      "Flexible class scheduling on your own terms",
+      "Experience different yoga styles with each visit",
+      "No commitment fee, perfect for newcomers",
+      "Access to special yoga workshops and events"
+    ],
+  },
+  {
+    title: "Monthly Membership",
+    price: "99.00",
+    features: [
+      "Attend unlimited yoga classes you need",
+      "Secure your spot in popular classes in advance",
+      "Be a community member and connect freely",
+      "Complimentary access to exclusive workshops"
+    ],
+  },
+  {
+    title: "Annual Pass",
+    price: "199.00",
+    features: [
+      "Substantial savings compared to monthly rates",
+      "Commit to your practice with consistency",
+      "Access to member-only events and workshops",
+      "Bring a friend for monthly complimentary class"
+    ],
+    button: "Book Appointment"
+  }
+]
+
 
 export const FooterData = [
   {
@@ -140,15 +161,4 @@ export const SocialMediaData = [
 
     link: "",
   },
-];
-
-export const AppointmentTypeData = [
-  { value: "dental checkup", label: "Dental Checkup" },
-  { value: "teeth cleaning", label: "Teeth Cleaning" },
-  { value: "teeth whitening", label: "Teeth Whitening" },
-];
-
-export const PreferredDentistData = [
-  { value: "Ahmed Sadiki", label: "Dr. Ahmed Sadiki" },
-  { value: "Ines Abdallah", label: "Dr. Ines Abdallah" },
 ];
