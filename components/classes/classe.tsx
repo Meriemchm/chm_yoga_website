@@ -1,13 +1,16 @@
 import Image from "next/image";
 import { ClassesData } from "../data/data";
+import { useGsapFade } from "@/hooks/gsap-animations";
 
 export const Classe = () => {
+  const fadeUp = useGsapFade("up");
   return (
     <div className="grid md:grid-cols-3 grid-cols-1 items-center justify-center gap-4">
       {ClassesData.map((classe, index) => (
         <div
           key={index}
           className="flex flex-col md:items-start items-center justify-center text-start"
+          ref={(el)=> {fadeUp(el,index)}}
         >
           <div
             className="flex items-center justify-center rounded-lg w-full"
@@ -25,7 +28,9 @@ export const Classe = () => {
             <h3 className="text-md font-semibold mb-2 self-start">
               {classe.title}
             </h3>
-            <p className="text-sm text-neutral-500 max-w-sm">{classe.description}</p>
+            <p className="text-sm text-neutral-500 max-w-sm">
+              {classe.description}
+            </p>
           </div>
         </div>
       ))}

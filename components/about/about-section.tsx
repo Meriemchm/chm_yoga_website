@@ -1,8 +1,14 @@
+'use client'
 import Image from "next/image";
 import { Container } from "../ui/container";
 import Link from "next/link";
+import { useGsapFade } from "@/hooks/gsap-animations";
 
 export const AboutSection = () => {
+  const fadeUp = useGsapFade("up");
+  const fadeUp_2 = useGsapFade("up");
+  const fadeUp_3 = useGsapFade("up");
+  const fadeUp_4 = useGsapFade("up");
   return (
     <>
       <Image
@@ -21,18 +27,23 @@ export const AboutSection = () => {
             className="top"
             alt="logo-image"
             src="/Icons/logo_2.svg"
+            ref={(el) => fadeUp(el)}
           />
           <div className="max-w-2xl text-center ">
-            <h2 className="text-5xl py-5">
+            <h2 ref={(el) => fadeUp_2(el)} className="text-5xl py-5">
               YOGA LIFE FOR GREATER SELF CONTROL
             </h2>
-            <p className="text-lg mb-6 text-neutral-600">
+            <p ref={fadeUp_3} className="text-lg mb-6 text-neutral-600">
               An enchanting wellness studio where the art of yoga blends with
               captivating experiences inspired by sound, movement, and the
               nature.
             </p>
           </div>
-          <Link href="/about-us" className="group flex gap-2 items-center justify-center">
+          <Link
+            href="/about-us"
+            className="group flex gap-2 items-center justify-center"
+            ref={(el) => fadeUp_4(el)}
+          >
             <button className=" capitalize border-b text-center border-gray-300">
               More about us
             </button>

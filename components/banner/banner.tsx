@@ -1,12 +1,15 @@
+"use client";
+import { useGsapFade } from "@/hooks/gsap-animations";
 import Button from "../ui/button";
 
 export const Banner = () => {
+  const fadeUp = useGsapFade("up");
   return (
     <div
       className="flex flex-col justify-end items-center py-10 text-center h-[500px] bg-cover bg-top bg-no-repeat rounded-xl"
       style={{ backgroundImage: "url('/Images/banner___1.jpg')" }}
     >
-      <div className="flex flex-col justify-center items-center">
+      <div ref={fadeUp} className="flex flex-col justify-center items-center">
         <p className="text-4xl md:text-5xl font-semibold text-black max-w-3xl">
           You Can always control what goes inside you
         </p>
