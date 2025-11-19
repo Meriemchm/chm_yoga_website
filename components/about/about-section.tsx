@@ -32,10 +32,17 @@ export const AboutSection = () => {
               nature.
             </p>
           </div>
-          <Link href="/about-us">
-            <button className="capitalize border-b border-gray-300 pt-2 hover:scale-105 duration-200 transition-all">
+          <Link href="/about-us" className="group flex gap-2 items-center justify-center">
+            <button className=" capitalize border-b text-center border-gray-300">
               More about us
             </button>
+            <Image
+              src="/Icons/arrow.svg"
+              alt="arrow"
+              height={20}
+              width={20}
+              className="group-hover:translate-x-2 transform duration-200"
+            />
           </Link>
         </div>
       </Container>
