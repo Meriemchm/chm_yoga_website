@@ -98,6 +98,40 @@ export const PlansData = [
   },
 ];
 
+export const ContactData = [
+  {
+    id: 1,
+    title: "phone",
+    description:
+      "+231 500 00 00 00",
+    image: "/Icons/phone.svg",
+    style:'text-thirdary'
+  },
+
+  {
+    id: 2,
+    title: "Email",
+    description:
+      "info@flexflow.com",
+    image: "/Icons/email.svg",
+    style:'text-primary'
+  },
+  {
+    id: 3,
+    title: "Address",
+    description: "123 Example St, City, Country",
+    image: "/Icons/address.svg",
+    style:'text-[#F2ED9C]'
+  },
+  {
+    id: 4,
+    title: "Support",
+    description: "info@8pxlstudio",
+    image: "/Icons/support.svg",
+    style:'text-[#77697D]'
+  },
+];
+
 export const FooterData = [
   {
     id: 1,

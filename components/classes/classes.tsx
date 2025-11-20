@@ -1,13 +1,16 @@
 'use client'
 import { useGsapFade } from "@/hooks/gsap-animations";
 import { Classe } from "./classe";
+import TitleSection from "../ui/title-section";
 export const Classes = () => {
-  const fadeUp = useGsapFade('up');
+  const fadeUp = useGsapFade("up");
   return (
     <div className="flex flex-col gap-12 items-start justify-center">
-      <h2 ref={fadeUp} className="text-3xl max-w-xs font-extralight  capitalize">
-        Our variety of yoga <span className="cormorant">classes</span> for you
-      </h2>
+      <TitleSection
+        text="Our variety of yoga classes for you"
+        keyword="classes"
+        ref={fadeUp}
+      />
 
       <Classe />
     </div>

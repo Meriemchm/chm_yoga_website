@@ -35,9 +35,9 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="border-t border-neutral-300 flex justify-between w-full items-center py-4 ">
+          <div className="border-t border-neutral-300 flex justify-between w-full items-center gap-18 py-4 ">
             <SocialMediaIcons />
-            <p className="md:text-base text-sm">
+            <p className="md:text-base text-sm max-w-xs">
               © {new Date().getFullYear()} Flexflow. All rights reserved.
             </p>
           </div>
