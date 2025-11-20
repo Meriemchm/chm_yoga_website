@@ -16,7 +16,7 @@ export const Hero = () => {
           Discover balance, strength, and peace.
         </h1>
         <p className="text-neutral-500">
-          Join us for a nurtured Mind,Body & Soul Approaching.
+          Join us for a nurtured Mind, Body & Soul Approaching.
         </p>
         <Button>Get started</Button>
       </div>
