@@ -51,8 +51,7 @@ export const ClassesData = [
   },
 ];
 
-
-export const PlansData =  [
+export const PlansData = [
   {
     title: "One Class",
     price: "19.00",
@@ -60,8 +59,10 @@ export const PlansData =  [
       "Flexible class scheduling on your own terms",
       "Experience different yoga styles with each visit",
       "No commitment fee, perfect for newcomers",
-      "Access to special yoga workshops and events"
+      "Access to special yoga workshops and events",
     ],
+    bg: "from-blue-50 to-white",
+    buttonBg: "bg-primary text-white",
   },
   {
     title: "Monthly Membership",
@@ -70,8 +71,10 @@ export const PlansData =  [
       "Attend unlimited yoga classes you need",
       "Secure your spot in popular classes in advance",
       "Be a community member and connect freely",
-      "Complimentary access to exclusive workshops"
+      "Complimentary access to exclusive workshops",
     ],
+    bg: "from-yellow-50 to-white",
+    buttonBg: "bg-yellow-100 text-black",
   },
   {
     title: "Annual Pass",
@@ -80,12 +83,12 @@ export const PlansData =  [
       "Substantial savings compared to monthly rates",
       "Commit to your practice with consistency",
       "Access to member-only events and workshops",
-      "Bring a friend for monthly complimentary class"
+      "Bring a friend for monthly complimentary class",
     ],
-    button: "Book Appointment"
-  }
-]
-
+    bg: "from-red-50 to-white",
+    buttonBg: "bg-red-100 text-white",
+  },
+];
 
 export const FooterData = [
   {
