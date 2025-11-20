@@ -1,16 +1,16 @@
+import { Classes } from "@/components/classes/classes";
 import MembershipSection from "@/components/membership/membership";
-import { Plans } from "@/components/plans/plans";
 import { Container } from "@/components/ui/container";
 import HearderTitle from "@/components/ui/hearder-title";
 
-const PricingPage = () => {
+const ClassesPage = () => {
   return (
     <div>
       {" "}
-      <HearderTitle title="Pricing" url="pricing" />
+      <HearderTitle title="Classes" url="Classes" />
       <div className="min-h-screen bg-white">
         <Container className="py-24">
-          <Plans />
+          <Classes />
         </Container>{" "}
       </div>
       <div className="md:min-h-screen bg-secondary md:bg-white">
@@ -22,4 +22,4 @@ const PricingPage = () => {
   );
 };
 
-export default PricingPage;
+export default ClassesPage;
