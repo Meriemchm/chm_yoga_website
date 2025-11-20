@@ -20,9 +20,9 @@ export default function MembershipSection() {
       {/* Content Card */}
       <div
         ref={fadeUp}
-        className="relative z-10 bg-white rounded-xl shadow-xl p-8 md:p-10 max-w-xl md:ml-auto -top-36 md:top-0 mx-4 md:mx-0 md:mr-16"
+        className="relative z-10 bg-white rounded-xl shadow-xl p-8 md:p-10 max-w-xl md:ml-auto -top-36 md:top-0  md:mx-0 md:mr-16"
       >
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">
+        <h2 className="md:text-3xl text-2xl font-bold text-gray-900 mb-4">
           Free 30-Day Membership
         </h2>
 

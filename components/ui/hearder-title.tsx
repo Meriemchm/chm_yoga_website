@@ -13,7 +13,7 @@ const HearderTitle: React.FC<hearderTitleProps> = ({ title, url }) => {
   return (
     <div
       ref={fadeup}
-      className="relative flex flex-col w-full items-center text-center  justify-center p-24 bg-thirdary "
+      className="relative flex flex-col w-full items-center text-center  justify-center py-24 bg-thirdary "
     >
       <h1 className="md:text-5xl text-2xl capitalize text-black font-thin my-12 cormorant ">
         {title}
@@ -21,13 +21,13 @@ const HearderTitle: React.FC<hearderTitleProps> = ({ title, url }) => {
       <p className="text-sm md:text-base capitalize text-neutral-500">
         Home / {url}
       </p>
-      {/* <Image
+      <Image
         height={200}
         width={200}
         className="absolute bottom-0 right place-self-end"
         alt="leaf-border-image"
         src="/Icons/leaf_border_4.svg"
-      /> */}
+      />
     </div>
   );
 };

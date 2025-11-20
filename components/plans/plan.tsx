@@ -8,7 +8,7 @@ export const Plan = () => {
       {PlansData.map((plan, index) => (
         <div
           key={index}
-          className={`flex md:flex-row flex-col gap-8 md:gap-0 pricing-card justify-between items-center md:p-8 py-8 rounded-xl bg-linear-to-r ${plan.bg}`}
+          className={`flex md:flex-row flex-col gap-8 md:gap-0 pricing-card justify-between items-center p-2 md:p-8 py-8 rounded-xl ${plan.bg}`}
           style={{ ["--circle-bg"]: plan.circleColor } as React.CSSProperties}
           ref={(el) => {
             fadeUp(el, index);
