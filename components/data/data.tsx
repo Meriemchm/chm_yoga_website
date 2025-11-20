@@ -13,11 +13,16 @@ export const NavbarItems = [
   },
   {
     id: 3,
-    name: "services",
-    link: "/services",
+    name: "classes",
+    link: "/classes",
   },
   {
     id: 4,
+    name: "pricing",
+    link: "/pricing",
+  },
+  {
+    id: 5,
     name: "contact us",
     link: "/contact-us",
   },

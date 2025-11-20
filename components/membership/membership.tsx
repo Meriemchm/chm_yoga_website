@@ -12,8 +12,8 @@ export default function MembershipSection() {
       <Image
         src="/Images/membership.png"
         alt="Yoga Background"
-        height={800}
-        width={800}
+        height={750}
+        width={750}
         className=" absolute bottom-0 left-0 rounded-lg"
       />
 
