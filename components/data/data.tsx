@@ -34,7 +34,7 @@ export const ClassesData = [
     title: "Hatha Yoga",
     description:
       "Perfect for yoga beginners, focusing on alignment and breathing trials.",
-    image: "/Images/classe__1.png",
+    image: "/Images/classe____1.png",
     style: { backgroundColor: "var(--color-primary)" },
   },
 

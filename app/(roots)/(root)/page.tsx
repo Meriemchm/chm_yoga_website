@@ -22,8 +22,8 @@ export default function Home() {
           <Classes />{" "}
         </Container>
       </div>
-      <div className="min-h-screen bg-white">
-        <Container className="py-24">
+      <div className="md:min-h-screen bg-white">
+        <Container className="md:py-24" >
           <Banner />{" "}
         </Container>
       </div>
