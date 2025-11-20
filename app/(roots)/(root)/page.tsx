@@ -32,8 +32,8 @@ export default function Home() {
           <Plans />{" "}
         </Container>
       </div>
-      <div className="min-h-screen bg-white">
-        <Container className="py-24">
+      <div className="md:min-h-screen bg-secondary md:bg-white">
+        <Container className="pt-24 ">
           <MembershipSection />{" "}
         </Container>
       </div>

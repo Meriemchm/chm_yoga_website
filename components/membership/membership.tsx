@@ -7,7 +7,7 @@ import { useGsapFade } from "@/hooks/gsap-animations";
 export default function MembershipSection() {
   const fadeUp = useGsapFade("up");
   return (
-    <div className="w-full relative flex items-center justify-center rounded-xl bg-secondary py-20">
+    <div className="w-full relative flex items-center justify-center md:h-auto  md:rounded-xl bg-secondary py-20">
       {/* Image Background */}
       <Image
         src="/Images/membership.png"
@@ -20,7 +20,7 @@ export default function MembershipSection() {
       {/* Content Card */}
       <div
         ref={fadeUp}
-        className="relative z-10 bg-white rounded-xl shadow-xl p-8 md:p-10 max-w-xl ml-auto mr-6 md:mr-16"
+        className="relative z-10 bg-white rounded-xl shadow-xl p-8 md:p-10 max-w-xl md:ml-auto -top-36 md:top-0 mx-4 md:mx-0 md:mr-16"
       >
         <h2 className="text-3xl font-bold text-gray-900 mb-4">
           Free 30-Day Membership
@@ -39,16 +39,7 @@ export default function MembershipSection() {
             href="/contact-us"
             className="group flex gap-2 items-center justify-center"
           >
-            <button className=" capitalize text-center border-gray-300">
-              Contact us
-            </button>
-            <Image
-              src="/Icons/arrow.svg"
-              alt="arrow"
-              height={20}
-              width={20}
-              className="group-hover:translate-x-2 transform duration-200"
-            />
+            <Button variant="linkArrow">Contact us</Button>
           </Link>
         </div>
       </div>

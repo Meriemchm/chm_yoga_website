@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Container } from "../ui/container";
 import Link from "next/link";
 import { useGsapFade } from "@/hooks/gsap-animations";
+import Button from "../ui/button";
 
 export const AboutSection = () => {
   const fadeUp = useGsapFade("up");
@@ -31,7 +32,7 @@ export const AboutSection = () => {
           />
           <div className="max-w-2xl text-center ">
             <h2 ref={(el) => fadeUp_2(el)} className="md:text-5xl text-4xl py-5">
-              YOGA LIFE FOR GREATER SELF CONTROL
+              YOGA LIFE FOR GREATER <span className="cormorant">SELF CONTROL</span>
             </h2>
             <p ref={fadeUp_3} className="text-lg mb-6 text-neutral-600">
               An enchanting wellness studio where the art of yoga blends with
@@ -44,16 +45,9 @@ export const AboutSection = () => {
             className="group flex gap-2 items-center justify-center"
             ref={(el) => fadeUp_4(el)}
           >
-            <button className=" capitalize border-b text-center border-gray-300">
+            <Button variant="linkArrow">
               More about us
-            </button>
-            <Image
-              src="/Icons/arrow.svg"
-              alt="arrow"
-              height={20}
-              width={20}
-              className="group-hover:translate-x-2 transform duration-200"
-            />
+            </Button>
           </Link>
         </div>
       </Container>

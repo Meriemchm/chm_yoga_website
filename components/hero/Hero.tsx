@@ -12,8 +12,8 @@ export const Hero = () => {
         ref={fadeRight}
         className="flex flex-col items-start justify-center gap-8"
       >
-        <h1 className="md:text-6xl text-5xl font-bold">
-          Discover balance, strength, and peace.
+        <h1 className="md:text-6xl text-5xl font-extra-bold">
+          Discover balance, strength, <span className="cormorant">and</span> peace.
         </h1>
         <p className="text-neutral-500">
           Join us for a nurtured Mind, Body & Soul Approaching.

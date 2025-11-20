@@ -5,8 +5,8 @@ export const Classes = () => {
   const fadeUp = useGsapFade('up');
   return (
     <div className="flex flex-col gap-12 items-start justify-center">
-      <h2 ref={fadeUp} className="text-3xl max-w-sm font-bold capitalize">
-        Our variety of yoga <span>classes</span> for you
+      <h2 ref={fadeUp} className="text-3xl max-w-xs font-extralight  capitalize">
+        Our variety of yoga <span className="cormorant">classes</span> for you
       </h2>
 
       <Classe />

@@ -1,22 +1,51 @@
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import * as React from "react";
 
-type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+  variant?: "default" | "linkArrow";
+};
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className = "", children, disabled, type = "button", ...props }, ref) => {
+  (
+    {
+      className = "",
+      children,
+      disabled,
+      type = "button",
+      variant = "default",
+      ...props
+    },
+    ref
+  ) => {
+    const baseClasses = "transition text-sm md:text-base";
+
+    const variants = {
+      default:
+        "bg-primary capitalize px-8 py-2 text-white rounded-full hover:bg-primary/90",
+      linkArrow:
+        "capitalize text-center pb-1 flex items-center gap-2 group bg-transparent px-0 py-0",
+    };
+
     return (
       <button
-        className={cn(
-          "bg-primary px-8 py-2 text-white rounded-full hover:bg-primary/90 transition text-sm md:text-base",
-          className
-        )}
+        className={cn(baseClasses, variants[variant], className)}
         disabled={disabled}
         type={type}
         ref={ref}
         {...props}
       >
         {children}
+
+        {variant === "linkArrow" && (
+          <Image
+            src="/Icons/arrow.svg"
+            alt="arrow"
+            height={20}
+            width={20}
+            className="group-hover:translate-x-2 transform duration-200"
+          />
+        )}
       </button>
     );
   }
