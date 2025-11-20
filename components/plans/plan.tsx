@@ -8,20 +8,21 @@ export const Plan = () => {
       {PlansData.map((plan, index) => (
         <div
           key={index}
-          className={`flex justify-between items-center p-8 rounded-xl bg-linear-to-r ${plan.bg}`}
+          className={`flex md:flex-row flex-col gap-8 md:gap-0 pricing-card justify-between items-center md:p-8 py-8 rounded-xl bg-linear-to-r ${plan.bg}`}
+          style={{ ["--circle-bg"]: plan.circleColor } as React.CSSProperties}
           ref={(el) => {
             fadeUp(el, index);
           }}
         >
           <div>
-            <h3 className="font-semibold text-lg">{plan.title}</h3>
-            <p className="text-4xl font-bold mt-2">
+            <h3 className="font-semibold md:text-lg text-base">{plan.title}</h3>
+            <p className="md:text-4xl text-2xl font-bold mt-2">
               ${plan.price}
-              <span className="text-neutral-500 text-lg"> / class</span>
+              <span className="text-neutral-500 md:text-lg text-base"> / class</span>
             </p>
           </div>
 
-          <ul className="text-neutral-600 space-y-2">
+          <ul className="text-neutral-600 space-y-2 md:text-base text-sm">
             {plan.features.map((f, i) => (
               <li key={i} className="list-disc list-inside">
                 {f}
@@ -30,7 +31,7 @@ export const Plan = () => {
           </ul>
 
           <button
-            className={`px-6 py-3 rounded-lg font-semibold ${plan.buttonBg}`}
+            className={`px-6 py-3 rounded-md font-semibold hover:scale-105 duration-200 ${plan.buttonBg}`}
           >
             Book Appointment
           </button>

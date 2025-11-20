@@ -32,3 +32,21 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.pricing-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40%;
+  width: 70%;
+  height: 180%;
+  border-radius: 10000px;
+  transform: rotate(20px);
+  background: var(--circle-bg); /* OK */
+  z-index: -1;
+}

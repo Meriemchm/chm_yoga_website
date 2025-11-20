@@ -21,7 +21,7 @@ export const Footer = () => {
               <p className=" capitalize font-extralight text-lg ">flexflow</p>
             </Link>
 
-            <div className="flex items-center gap-8">
+            <div className="hidden md:flex items-center gap-8">
               {NavbarItems.map((item, index) => (
                 <div key={index} className="flex items-center gap-6 capitalize">
                   <Link

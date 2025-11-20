@@ -61,8 +61,9 @@ export const PlansData = [
       "No commitment fee, perfect for newcomers",
       "Access to special yoga workshops and events",
     ],
-    bg: "from-blue-50 to-white",
+    bg: "bg-secondary",
     buttonBg: "bg-primary text-white",
+    circleColor: "#edeef6",
   },
   {
     title: "Monthly Membership",
@@ -73,8 +74,9 @@ export const PlansData = [
       "Be a community member and connect freely",
       "Complimentary access to exclusive workshops",
     ],
-    bg: "from-yellow-50 to-white",
-    buttonBg: "bg-yellow-100 text-black",
+    bg: "bg-[#f8f4b1]",
+    buttonBg: "bg-white text-black",
+    circleColor: "#faf7c4",
   },
   {
     title: "Annual Pass",
@@ -85,8 +87,9 @@ export const PlansData = [
       "Access to member-only events and workshops",
       "Bring a friend for monthly complimentary class",
     ],
-    bg: "from-red-50 to-white",
-    buttonBg: "bg-red-100 text-white",
+    bg: "bg-secondary to-white",
+    buttonBg: "bg-fourthary text-white",
+    circleColor: "#faf1ed",
   },
 ];
 

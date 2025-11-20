@@ -30,7 +30,7 @@ export const AboutSection = () => {
             ref={(el) => fadeUp(el)}
           />
           <div className="max-w-2xl text-center ">
-            <h2 ref={(el) => fadeUp_2(el)} className="text-5xl py-5">
+            <h2 ref={(el) => fadeUp_2(el)} className="md:text-5xl text-4xl py-5">
               YOGA LIFE FOR GREATER SELF CONTROL
             </h2>
             <p ref={fadeUp_3} className="text-lg mb-6 text-neutral-600">

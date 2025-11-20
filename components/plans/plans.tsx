@@ -7,7 +7,7 @@ export const Plans = () => {
   const fadeRight = useGsapFade("right");
   return (
     <div className="flex flex-col w-full gap-12 items-start ">
-      <div className="flex items-start justify-between w-full">
+      <div className="flex md:flex-row flex-col gap-4 md:gap-0 items-start justify-between w-full">
 
         <h2 ref={fadeLeft} className="text-3xl max-w-sm font-bold capitalize">
           Our flexible class <span>pricing</span> plans
