@@ -24,7 +24,7 @@ const HearderTitle: React.FC<hearderTitleProps> = ({ title, url }) => {
       <Image
         height={200}
         width={200}
-        className="absolute bottom-0 right place-self-end"
+        className="absolute bottom-0 right place-self-end -z-1"
         alt="leaf-border-image"
         src="/Icons/leaf_border_4.svg"
       />
