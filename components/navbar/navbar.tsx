@@ -49,7 +49,7 @@ const Navbar = () => {
         </div>
 
         {/*Mobile*/}
-        <div className="md:hidden rounded-full flex w-full h-20 bg-white text-black justify-between  items-center ">
+        <div className="md:hidden rounded-full  flex w-full h-20 bg-white text-black justify-between  items-center ">
           {/*Image*/}
           <Link href={"/"}>
             <Image
@@ -62,7 +62,7 @@ const Navbar = () => {
           </Link>
           {/*Hamburger Icon*/}
           <div
-            className="text-3xl cursor-pointer"
+            className="text-3xl cursor-pointer z-10"
             onClick={() => isOpen(!open)}
           >
             <Image
@@ -78,8 +78,8 @@ const Navbar = () => {
         {/*Mobile Menu*/}
 
         {open && (
-          <div className="h-screen bg-white text-black flex flex-col items-center justify-center gap-8 pb-34">
-            {/*NavItems*/}
+        <div className="flex flex-col justify-center items-center absolute gap-8 -top-2 left-0 w-full min-h-screen bg-white text-black">
+           {/*NavItems*/}
             {NavbarItems.map((item, index) => (
               <div key={index} className="flex items-center capitalize text-xl">
                 <Link
