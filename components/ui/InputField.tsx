@@ -32,12 +32,7 @@ const InputField = <T extends FieldValues>({
   step,
 }: InputFieldProps<T>) => {
   return (
-    <div className="flex flex-col gap-1">
-      {label && (
-        <label className="font-semibold text-black">
-          {label} <span className="text-2xl">*</span>
-        </label>
-      )}
+    <div className="flex flex-col gap-1 ">
 
       {textarea ? (
         <textarea

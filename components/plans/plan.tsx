@@ -1,5 +1,8 @@
 import { useGsapFade } from "@/hooks/gsap-animations";
 import { PlansData } from "../data/data";
+import Button from "../ui/button";
+import Link from "next/link";
+import Image from "next/image";
 
 export const Plan = () => {
   const fadeUp = useGsapFade("up");
@@ -18,23 +21,34 @@ export const Plan = () => {
             <h3 className="font-semibold md:text-lg text-base">{plan.title}</h3>
             <p className="md:text-4xl text-2xl font-bold mt-2">
               ${plan.price}
-              <span className="text-neutral-500 md:text-lg text-base"> / class</span>
+              <span className="text-neutral-500 md:text-lg text-base">
+                {" "}
+                / class
+              </span>
             </p>
           </div>
 
           <ul className="text-neutral-600 space-y-2 md:text-base text-sm">
             {plan.features.map((f, i) => (
-              <li key={i} className="list-disc list-inside">
+              <div key={i} className="flex justify-start items-center gap-2">
+                <Image
+                  src="/Icons/flower.svg"
+                  alt="meditation-icon"
+                  height={10}
+                  width={10}
+                  className="w-4 h-4"
+                />
                 {f}
-              </li>
+              </div>
             ))}
           </ul>
-
-          <button
-            className={`px-6 py-3 rounded-md font-semibold hover:scale-105 duration-200 ${plan.buttonBg}`}
-          >
-            Book Appointment
-          </button>
+          <Link href="/book-an-appointment">
+            <Button
+              className={`px-6 py-3 rounded-md font-semibold ${plan.buttonBg}`}
+            >
+              Book Appointment
+            </Button>
+          </Link>
         </div>
       ))}
     </div>

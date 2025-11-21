@@ -22,7 +22,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
     const variants = {
       default:
-        "bg-primary capitalize px-8 py-2 text-white rounded-full hover:bg-primary/90",
+        "bg-primary capitalize px-8 py-2 text-white rounded-full hover:scale-105 duration-200",
       linkArrow:
         "capitalize text-center pb-1 flex items-center gap-2 group bg-transparent px-0 py-0",
     };

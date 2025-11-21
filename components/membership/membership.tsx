@@ -34,7 +34,9 @@ export default function MembershipSection() {
 
         {/* Buttons */}
         <div className="flex items-center gap-4">
-          <Button>Get started</Button>
+          <Link href="/pricing">
+            <Button>Get started</Button>
+          </Link>
           <Link
             href="/contact-us"
             className="group flex gap-2 items-center justify-center"

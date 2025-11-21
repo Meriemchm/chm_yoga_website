@@ -44,7 +44,7 @@ const Navbar = () => {
 
           <Button>
             {" "}
-            <Link href="/book-an-appointment">Book Now</Link>
+            <Link href="/pricing">Book Now</Link>
           </Button>
         </div>
 
@@ -93,7 +93,7 @@ const Navbar = () => {
             ))}
             <Button>
               {" "}
-              <Link href="/book-an-appointment" onClick={() => isOpen(!open)}>
+              <Link href="/pricing" onClick={() => isOpen(!open)}>
                 Book Now
               </Link>
             </Button>

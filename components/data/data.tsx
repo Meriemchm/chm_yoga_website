@@ -102,83 +102,31 @@ export const ContactData = [
   {
     id: 1,
     title: "phone",
-    description:
-      "+231 500 00 00 00",
+    description: "+231 500 00 00 00",
     image: "/Icons/phone.svg",
-    style:'text-thirdary'
+    style: "text-thirdary",
   },
 
   {
     id: 2,
     title: "Email",
-    description:
-      "info@flexflow.com",
+    description: "info@flexflow.com",
     image: "/Icons/email.svg",
-    style:'text-primary'
+    style: "text-primary",
   },
   {
     id: 3,
     title: "Address",
     description: "123 Example St, City, Country",
     image: "/Icons/address.svg",
-    style:'text-[#F2ED9C]'
+    style: "text-[#F2ED9C]",
   },
   {
     id: 4,
     title: "Support",
     description: "info@8pxlstudio",
     image: "/Icons/support.svg",
-    style:'text-[#77697D]'
-  },
-];
-
-export const FooterData = [
-  {
-    id: 1,
-    title: "Company",
-    details: [
-      { content: <Link href="/about-us">About Us</Link> },
-      { content: <Link href="/contact-us">Contact Us</Link> },
-    ],
-  },
-  {
-    id: 2,
-    title: "Contact Info",
-    details: [
-      { content: <p>+231 500 00 00 00</p> },
-      { content: <p>example@name.com</p> },
-      { content: <p>123 Example St, City, Country</p> },
-    ],
-  },
-
-  {
-    id: 3,
-    title: "Clinic Hours",
-    details: [
-      {
-        content: (
-          <div className="flex justify-between flex-grow col-span-2">
-            <p>Saturday to Thursday</p>
-            <p className="text-sm">08:00 - 22:00</p>
-          </div>
-        ),
-      },
-      {
-        content: (
-          <div className="flex justify-between col-span-2">
-            <p>Saturday</p> <p className="text-sm">11:00 - 22:00</p>
-          </div>
-        ),
-      },
-      {
-        content: (
-          <div className="flex justify-between col-span-2">
-            <p>Friday </p>
-            <p className="text-sm">Closed</p>
-          </div>
-        ),
-      },
-    ],
+    style: "text-[#77697D]",
   },
 ];
 
@@ -206,4 +154,37 @@ export const SocialMediaData = [
 
     link: "",
   },
+];
+
+export const AppointmentTypeData = [
+  { value: "hatha yoga", label: "Hatha Yoga" },
+  { value: "vinyasa flow", label: "Vinyasa Flow" },
+  { value: "yin yoga", label: "Yin Yoga" },
+  { value: "power yoga", label: "Power Yoga" },
+  { value: "meditation", label: "Meditation & Breathwork" },
+];
+
+export const PreferredInstructorData = [
+  { value: "sara bendib", label: "Sara Bendib" },
+  { value: "lina hamadi", label: "Lina Hamadi" },
+  { value: "youssef kader", label: "Youssef Kader" },
+];
+
+export const TimeData = [
+  { value: "08:00", label: "08:00 AM" },
+  { value: "09:30", label: "09:30 AM" },
+  { value: "11:00", label: "11:00 AM" },
+  { value: "14:00", label: "02:00 PM" },
+  { value: "16:30", label: "04:30 PM" },
+  { value: "18:00", label: "06:00 PM" },
+];
+
+export const DateData = [
+  { value: "monday", label: "Monday" },
+  { value: "tuesday", label: "Tuesday" },
+  { value: "wednesday", label: "Wednesday" },
+  { value: "thursday", label: "Thursday" },
+  { value: "friday", label: "Friday" },
+  { value: "saturday", label: "Saturday" },
+  { value: "sunday", label: "Sunday" },
 ];

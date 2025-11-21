@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Button from "../ui/button";
 import { useGsapFade } from "@/hooks/gsap-animations";
+import Link from "next/link";
 
 export const Hero = () => {
   const fadeLeft = useGsapFade("left");
@@ -13,12 +14,15 @@ export const Hero = () => {
         className="flex flex-col items-start justify-center gap-8"
       >
         <h1 className="md:text-6xl text-5xl font-extra-bold">
-          Discover balance, strength, <span className="cormorant">and</span> peace.
+          Discover balance, strength, <span className="cormorant">and</span>{" "}
+          peace.
         </h1>
         <p className="text-neutral-500">
           Join us for a nurtured Mind, Body & Soul Approaching.
         </p>
-        <Button>Get started</Button>
+        <Link href='/pricing'>
+          <Button>Get started</Button>
+        </Link>
       </div>
 
       <Image
