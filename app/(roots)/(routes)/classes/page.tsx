@@ -5,7 +5,7 @@ import HearderTitle from "@/components/ui/hearder-title";
 
 const ClassesPage = () => {
   return (
-    <div>
+    <div >
       {" "}
       <HearderTitle title="Classes" url="Classes" />
       <div className="min-h-screen bg-white">

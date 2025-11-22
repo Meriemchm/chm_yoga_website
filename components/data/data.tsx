@@ -156,6 +156,34 @@ export const SocialMediaData = [
   },
 ];
 
+export const AboutData = [
+  {
+    id: 1,
+    name: "Yoga Rooms",
+    icon: "/Icons/rooms.svg",
+    description: "25",
+  },
+
+  {
+    id: 2,
+    name: "classes",
+    icon: "/Icons/classes.svg",
+    description: "5",
+  },
+  {
+    id: 3,
+    name: "events",
+    icon: "/Icons/events.svg",
+    description: "20",
+  },
+  {
+    id: 4,
+    name: "Coaches",
+    icon: "/Icons/coaches.svg",
+    description: "15",
+  },
+];
+
 export const AppointmentTypeData = [
   { value: "hatha yoga", label: "Hatha Yoga" },
   { value: "vinyasa flow", label: "Vinyasa Flow" },
