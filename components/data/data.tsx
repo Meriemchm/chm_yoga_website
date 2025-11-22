@@ -33,26 +33,29 @@ export const ClassesData = [
     id: 3,
     title: "Hatha Yoga",
     description:
-      "Perfect for yoga beginners, focusing on alignment and breathing trials.",
+      "Perfect for yoga <span class='font-bold'>beginners</span>, focusing on alignment and breathing trials.",
     image: "/Images/classe____1.png",
     style: { backgroundColor: "var(--color-primary)" },
+    time: "60 min",
   },
 
   {
     id: 2,
     title: "Vinyasa Flow",
     description:
-      "Dynamic yoga sequences to improve your flexibility and strength for intermediate.",
+      "Dynamic yoga sequences to improve your flexibility and strength for <span class='font-bold'>intermediate</span>.",
     image: "/Images/classe__2.png",
     style: { backgroundColor: "var(--color-thirdary)" },
+    time: "75 min",
   },
   {
     id: 1,
     title: "Yin Yoga",
     description:
-      "Deep stretches to release tension and relax the mind for every yoga enthusiasts.",
+      "Deep stretches to release tension and relax the mind for <span class='font-bold'>all</span> yoga enthusiasts.",
     image: "/Images/classe__3.png",
     style: { backgroundColor: "var(--color-fourthary)" },
+    time: "60 min",
   },
 ];
 
@@ -249,4 +252,13 @@ export const FaqsData = [
       "It’s recommended to avoid heavy meals at least two hours before your session.",
     style: "bg-[#fbfade]",
   },
+];
+
+export const TrainerData = [
+  { name: "Lamia Sereine", image: "/Images/trainer1.png" },
+  { name: "Lila Haj", image: "/Images/trainer2.png" },
+  { name: "Meriem Lumière", image: "/Images/trainer3.png" },
+  { name: "Zayn Flow", image: "/Images/trainer4.png" },
+  { name: "Rami Hossine", image: "/Images/trainer5.png" },
+  { name: "Imane Lune", image: "/Images/trainer6.png" },
 ];

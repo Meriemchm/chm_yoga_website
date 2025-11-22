@@ -18,7 +18,7 @@ export const FaqItem = ({ data }: FaqItemProps) => {
   const toggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
-  const fadeUp = useGsapFade('up')
+  const fadeUp = useGsapFade("up");
 
   return (
     <div className="w-full space-y-3">
@@ -30,10 +30,13 @@ export const FaqItem = ({ data }: FaqItemProps) => {
             "w-full rounded-xl p-6 cursor-pointer transition-all"
           )}
           onClick={() => toggle(index)}
-          ref={(el)=> {fadeUp(el,index)}}
+          ref={(el) => {
+            fadeUp(el, index);
+          }}
         >
           <div className="flex justify-between items-center">
             <h3 className=" font-medium">{item.question}</h3>
+
             {openIndex === index ? (
               <Image src="/Icons/arrow-up.svg" alt="" width={12} height={12} />
             ) : (

@@ -18,14 +18,12 @@ const SocialMediaIcons: React.FC<SocialMediaIconsProps> = ({
       {SocialMediaData.map((item, index) => (
         <div
           key={index}
-          className="rounded-full p-2 bg-primary hover:scale-105 duration-200 "
+          className={cn(
+            className,
+            "rounded-full p-2 hover:scale-105 duration-200 "
+          )}
         >
-          <Link
-            href={item.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cn(className)}
-          >
+          <Link href={item.link} target="_blank" rel="noopener noreferrer">
             <Image src={item.icon} alt={item.name} height={size} width={size} />
           </Link>{" "}
         </div>
