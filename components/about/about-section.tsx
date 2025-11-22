@@ -55,7 +55,7 @@ export const AboutSection = () => {
       <Image
         height={300}
         width={300}
-        className="right place-self-end"
+        className="bottom place-self-end"
         alt="leaf-border-image"
         src="/Icons/leaf_border_2.svg"
       />

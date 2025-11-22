@@ -20,9 +20,18 @@ export const Hero = () => {
         <p className="text-neutral-500">
           Join us for a nurtured Mind, Body & Soul Approaching.
         </p>
-        <Link href='/pricing'>
-          <Button>Get started</Button>
-        </Link>
+        {/* Buttons */}
+        <div className="flex items-center gap-4">
+          <Link href="/pricing">
+            <Button>Get started</Button>
+          </Link>
+          <Link
+            href="/contact-us"
+            className="group flex gap-2 items-center justify-center"
+          >
+            <Button variant="linkArrow">Contact us</Button>
+          </Link>
+        </div>
       </div>
 
       <Image

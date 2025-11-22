@@ -103,7 +103,7 @@ export const ContactData = [
     id: 1,
     title: "phone",
     description: "+231 500 00 00 00",
-    image: "/Icons/phone.svg",
+    icon: "/Icons/phone.svg",
     style: "text-thirdary",
   },
 
@@ -111,21 +111,21 @@ export const ContactData = [
     id: 2,
     title: "Email",
     description: "info@flexflow.com",
-    image: "/Icons/email.svg",
+    icon: "/Icons/email.svg",
     style: "text-primary",
   },
   {
     id: 3,
     title: "Address",
     description: "123 Example St, City, Country",
-    image: "/Icons/address.svg",
+    icon: "/Icons/address.svg",
     style: "text-[#F2ED9C]",
   },
   {
     id: 4,
     title: "Support",
     description: "info@8pxlstudio",
-    image: "/Icons/support.svg",
+    icon: "/Icons/support.svg",
     style: "text-[#77697D]",
   },
 ];
@@ -159,26 +159,26 @@ export const SocialMediaData = [
 export const AboutData = [
   {
     id: 1,
-    name: "Yoga Rooms",
+    title: "Yoga Rooms",
     icon: "/Icons/rooms.svg",
     description: "25",
   },
 
   {
     id: 2,
-    name: "classes",
+    title: "classes",
     icon: "/Icons/classes.svg",
     description: "5",
   },
   {
     id: 3,
-    name: "events",
+    title: "events",
     icon: "/Icons/events.svg",
     description: "20",
   },
   {
     id: 4,
-    name: "Coaches",
+    title: "Coaches",
     icon: "/Icons/coaches.svg",
     description: "15",
   },

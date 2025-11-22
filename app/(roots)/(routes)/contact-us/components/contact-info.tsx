@@ -2,7 +2,8 @@
 import SocialMediaIcons from "@/components/ui/socialMediaIcons";
 import { useGsapFade } from "@/hooks/gsap-animations";
 import Image from "next/image";
-import { ContactItems } from "./contact-items";
+import { ContactData } from "@/components/data/data";
+import { ColumnsItems } from "@/components/ui/columns-items";
 
 const ContactInfo = () => {
   const faderight = useGsapFade("right");
@@ -19,7 +20,7 @@ const ContactInfo = () => {
         src="/Icons/leaf_border.svg"
       />
       <div className="flex items-center justify-center w-full p-4">
-        <ContactItems />
+        <ColumnsItems data={ContactData} className="grid md:grid-cols-2 grid-cols-1" />
       </div>
       <Image
         height={200}
