@@ -29,7 +29,7 @@ export const ColumnsItems = ({ data, className }: ColumnsItemsProps) => {
         >
           <Image height={40} width={40} alt={item.icon} src={item.icon} />
           <div className="flex flex-col justify-start items-start">
-            <p className={cn("text-start uppercase")}>{item.title}</p>
+            <p className={cn(item.style,"text-start uppercase")}>{item.title}</p>
             <p className="text-start pt-2 text-sm max-w-30 text-neutral-500">
               {item.description}
             </p>

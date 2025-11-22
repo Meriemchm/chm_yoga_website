@@ -5,8 +5,8 @@ import { useGsapFade } from "@/hooks/gsap-animations";
 export const AboutInfo = () => {
   const fadeRight = useGsapFade("right");
   return (
-    <div className="flex flex-col max-w-xl gap-8">
-      <div ref={fadeRight}>
+    <div className="flex flex-col gap-8">
+      <div ref={fadeRight} className="flex flex-col max-w-xl gap-8">
         <h1 className="md:text-4xl text-3xl font-extra-bold">
           Welcome discover balance, strength,{" "}
           <span className="cormorant">and</span> peace.

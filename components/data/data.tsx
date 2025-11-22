@@ -104,7 +104,7 @@ export const ContactData = [
     title: "phone",
     description: "+231 500 00 00 00",
     icon: "/Icons/phone.svg",
-    style: "text-thirdary",
+    style: "text-[#77697D]",
   },
 
   {
@@ -119,7 +119,7 @@ export const ContactData = [
     title: "Address",
     description: "123 Example St, City, Country",
     icon: "/Icons/address.svg",
-    style: "text-[#F2ED9C]",
+    style: "text-[#77697D]",
   },
   {
     id: 4,
@@ -162,6 +162,7 @@ export const AboutData = [
     title: "Yoga Rooms",
     icon: "/Icons/rooms.svg",
     description: "25",
+    style: "text-primary",
   },
 
   {
@@ -215,4 +216,37 @@ export const DateData = [
   { value: "friday", label: "Friday" },
   { value: "saturday", label: "Saturday" },
   { value: "sunday", label: "Sunday" },
+];
+
+export const FaqsData = [
+  {
+    question: "Do I need experience before joining?",
+    answer:
+      "No prior experience is required. Our programs are designed for all levels, from beginners to advanced practitioners.",
+    style: "bg-[#fbfade]",
+  },
+  {
+    question: "Are Your Instructors Certified?",
+    answer:
+      "All our instructors are fully certified and experienced in guiding students of all levels.",
+    style: "bg-[#faf1ed]",
+  },
+  {
+    question: "What Should I Bring To My First Class?",
+    answer:
+      "Bring comfortable clothing, a yoga mat if you have one, and a bottle of water.",
+    style: "bg-[#edeef6]",
+  },
+  {
+    question: "What Are The Benefits Of Yoga?",
+    answer:
+      "Yoga improves flexibility, reduces stress, enhances mindfulness, and strengthens the body.",
+    style: "bg-secondary",
+  },
+  {
+    question: "Can I Have A Meal Before Yoga?",
+    answer:
+      "It’s recommended to avoid heavy meals at least two hours before your session.",
+    style: "bg-[#fbfade]",
+  },
 ];
